@@ -1,0 +1,78 @@
+15:50:41.707 karate.env system property was:  
+15:50:41.719 >> lock acquired, begin callSingle: classpath:helpers/CreateToken.feature
+15:50:43.621 request:
+1 > POST https://conduit.productionready.io/api/users/login
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 57
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: conduit.productionready.io
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/11.0.11)
+{"user":{"email":"kar1@test.com","password":"Karate123"}}
+
+15:50:45.135 response time in milliseconds: 1508.76
+1 < 200
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 6551a345b85956b3-LIM
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Tue, 25 May 2021 20:50:45 GMT
+1 < ETag: W/"c9d18d8c06e9e33b8416f5b3d28dcd5f"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < NEL: {"report_to":"cf-nel","max_age":604800}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v2?s=07WvFr85C98zvyi4MZjO0hvWbdSnb7puWgG5ZsvEaohFVH8b73p%2BIEHNQZ4Ckf6NNmu0IrqGhwSOu0avv1iSE9XwJZNuf12dFJUPzbnFiZd9vCglkBBKfGbxbVN4C3ILLJuugZ2hzu8%3D"}],"group":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < Status: 200 OK
+1 < Transfer-Encoding: chunked
+1 < Vary: Origin
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Powered-By: Phusion Passenger 4.0.60
+1 < X-Request-Id: 86f1a7b8-697d-4e78-9785-aae4399752f9
+1 < X-Runtime: 0.082450
+1 < X-XSS-Protection: 1; mode=block
+1 < alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400
+1 < cf-request-id: 0a46e45f96000056b36100c000000001
+{"user":{"id":105277,"email":"kar1@test.com","createdAt":"2020-07-11T18:44:04.192Z","updatedAt":"2020-07-11T18:44:04.199Z","username":"Kar1","bio":null,"image":null,"token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTA1Mjc3LCJ1c2VybmFtZSI6IkthcjEiLCJleHAiOjE2MjcxNTk4NDV9.esKnQKep6yA_qsNIzPaGqTFXAJRl_F5I-jqsNbCEwnI"}}
+
+15:50:45.214 << lock released, cached callSingle: classpath:helpers/CreateToken.feature
+15:50:45.337 request:
+1 > POST https://conduit.productionready.io/api/users
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTA1Mjc3LCJ1c2VybmFtZSI6IkthcjEiLCJleHAiOjE2MjcxNTk4NDV9.esKnQKep6yA_qsNIzPaGqTFXAJRl_F5I-jqsNbCEwnI
+1 > Connection: Keep-Alive
+1 > Content-Length: 88
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: conduit.productionready.io
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/11.0.11)
+{"user":{"email":"karateUser2505@test.com","password":"12345670","username":"tester03"}}
+
+15:50:45.906 response time in milliseconds: 567.69
+1 < 422
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 6551a34b2b8936e5-LIM
+1 < Cache-Control: no-cache
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Tue, 25 May 2021 20:50:46 GMT
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < NEL: {"report_to":"cf-nel","max_age":604800}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v2?s=ZIN%2BxSbOYMCvygmPeA5oyaC2kreAoxi%2BqLbPDxH1PoKl03NQr3k%2FGQz3ZHb6wHMMx6KzWfsuBkIeCe7jNSErt1ZfGhC9SfXTg%2FOyZ16X7lCYnUgowlvsxVUnByDxnrUnV5tRHUR4lMI%3D"}],"group":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < Status: 422 Unprocessable Entity
+1 < Transfer-Encoding: chunked
+1 < Vary: Origin
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Powered-By: Phusion Passenger 4.0.60
+1 < X-Request-Id: 08f14af0-66fb-4974-83ce-e523359127e4
+1 < X-Runtime: 0.087079
+1 < X-XSS-Protection: 1; mode=block
+1 < alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400
+1 < cf-request-id: 0a46e462f8000036e50a3a4000000001
+{"errors":{"email":["has already been taken"],"username":["has already been taken"]}}
+
+15:50:45.908 status code was: 422, expected: 200, response time: 568, url: https://conduit.productionready.io/api/users, response: {"errors":{"email":["has already been taken"],"username":["has already been taken"]}}
+pZCI6MTcxOTk4LCJ1c2VybmFtZSI6InRlc3RlcjAzIiwiZXhwIjoxNjI3MTU1MDQ2fQ.SwTu5b9dShYdLCP1LuxYSkMzJDZQYqRRT4MWyzvZtdE"}}
+

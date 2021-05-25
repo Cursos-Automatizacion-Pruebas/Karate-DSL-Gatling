@@ -1,0 +1,469 @@
+20:08:12.060 [main] INFO  com.intuit.karate.RunnerOptions - found system property 'karate.options': --tags @debug
+20:08:15.115 [main] INFO  com.intuit.karate.Runner - waiting for parallel features to complete ...
+20:18:36.316 [main] INFO  com.intuit.karate.RunnerOptions - found system property 'karate.options': --tags @debug
+20:18:39.762 [main] INFO  com.intuit.karate - karate.env system property was:  
+20:18:39.809 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:helpers/CreateToken.feature
+20:18:41.044 [main] DEBUG com.intuit.karate - request:
+1 > POST https://conduit.productionready.io/api/users/login
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 57
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: conduit.productionready.io
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/11.0.11)
+{"user":{"email":"kar1@test.com","password":"Karate123"}}
+
+20:18:42.239 [main] DEBUG com.intuit.karate - response time in milliseconds: 1189.70
+1 < 200
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 654aee6d3a1c56a7-LIM
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Tue, 25 May 2021 01:18:43 GMT
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < NEL: {"report_to":"cf-nel","max_age":604800}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v2?s=EO0hZpGJ3mykWsOutL2IeBtDU4fcTAKgRgdN6170HmUKGs26Kd1fsXNTi9vvxR5c0Ular40Uue0hAx%2F81SxpoOzQuXPfWsxMu6m0bURrHIU0QA%2Fmzy%2BllCKoCtaW01lMDGJ5ioS47iQ%3D"}],"group":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < Transfer-Encoding: chunked
+1 < alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400
+1 < cache-control: max-age=0, private, must-revalidate
+1 < cf-request-id: 0a42b35843000056a763103000000001
+1 < etag: W/"da01392d27566115662c171341a0c0ab"
+1 < status: 200 OK
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-frame-options: SAMEORIGIN
+1 < x-powered-by: Phusion Passenger 4.0.60
+1 < x-request-id: 7a68efa0-efb5-46ac-99f7-a5121cd92a0b
+1 < x-runtime: 0.094897
+1 < x-xss-protection: 1; mode=block
+{"user":{"id":105277,"email":"kar1@test.com","createdAt":"2020-07-11T18:44:04.192Z","updatedAt":"2020-07-11T18:44:04.199Z","username":"Kar1","bio":null,"image":null,"token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTA1Mjc3LCJ1c2VybmFtZSI6IkthcjEiLCJleHAiOjE2MjcwODk1MjN9.NaZY3-w5QWozEMk1iblxIHzcHvlWawlZ1gizWlqM2SI"}}
+
+20:18:42.265 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:helpers/CreateToken.feature
+20:18:42.306 [main] DEBUG com.intuit.karate - request:
+1 > POST https://conduit.productionready.io/api/users
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTA1Mjc3LCJ1c2VybmFtZSI6IkthcjEiLCJleHAiOjE2MjcwODk1MjN9.NaZY3-w5QWozEMk1iblxIHzcHvlWawlZ1gizWlqM2SI
+1 > Connection: Keep-Alive
+1 > Content-Length: 82
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: conduit.productionready.io
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/11.0.11)
+{"user":{"email":"karateUser10@test.com","password":"1010","username":"tester01"}}
+
+20:18:42.898 [main] DEBUG com.intuit.karate - response time in milliseconds: 589.51
+1 < 422
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 654aee724b1a36e3-LIM
+1 < Cache-Control: no-cache
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Tue, 25 May 2021 01:18:44 GMT
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < NEL: {"report_to":"cf-nel","max_age":604800}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v2?s=Mt9oy8%2B0Oe3UD%2F%2FACC3v4%2BLBYmQatj7YbEvLYmaSrqBUTvS%2FQTkbym5OIQqyrsDJDJj%2BUN%2BWvEgV7uCQO792r6CtB5kwM%2BSUGvYYN1U40J1qrHlhTCQ%2B3YIqGp5pFPa4vdQolY3thaE%3D"}],"group":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < Status: 422 Unprocessable Entity
+1 < Transfer-Encoding: chunked
+1 < Vary: Origin
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Powered-By: Phusion Passenger 4.0.60
+1 < X-Request-Id: 172d5b61-1acc-48a6-a6ba-3c88c36760fe
+1 < X-Runtime: 0.120676
+1 < X-XSS-Protection: 1; mode=block
+1 < alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400
+1 < cf-request-id: 0a42b35b6b000036e39ea69000000001
+{"errors":{"password":["is too short (minimum is 8 characters)"],"username":["has already been taken"]}}
+
+20:18:42.903 [main] ERROR com.intuit.karate - status code was: 422, expected: 200, response time: 590, url: https://conduit.productionready.io/api/users, response: {"errors":{"password":["is too short (minimum is 8 characters)"],"username":["has already been taken"]}}
+20:22:07.472 [main] INFO  com.intuit.karate.RunnerOptions - found system property 'karate.options': --tags @debug
+20:22:11.744 [main] INFO  com.intuit.karate - karate.env system property was:  
+20:22:11.764 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:helpers/CreateToken.feature
+20:22:12.989 [main] DEBUG com.intuit.karate - request:
+1 > POST https://conduit.productionready.io/api/users/login
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 57
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: conduit.productionready.io
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/11.0.11)
+{"user":{"email":"kar1@test.com","password":"Karate123"}}
+
+20:22:14.232 [main] DEBUG com.intuit.karate - response time in milliseconds: 1238.53
+1 < 200
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 654af39a6e6456ad-LIM
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Tue, 25 May 2021 01:22:15 GMT
+1 < ETag: W/"d3d424f33c66f6f8f8a07dcb12f1d35d"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < NEL: {"report_to":"cf-nel","max_age":604800}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v2?s=YZiPh3gBM5GLUPuj723Yg%2BInPvduHfupd5tFgQ80VI4J4GHJwemE9yvFWVS0THEfov0MKwQ8rev%2FFDPi4dPPH%2F%2F%2FCtm%2FvNy7QUXGmYqBZVdSg4ljGgYmgET%2FSqrR9KLJ1HcSuyXKVYc%3D"}],"group":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < Status: 200 OK
+1 < Transfer-Encoding: chunked
+1 < Vary: Origin
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Powered-By: Phusion Passenger 4.0.60
+1 < X-Request-Id: 138ac7fa-3609-48db-9ac8-8e6e7f91f66d
+1 < X-Runtime: 0.081995
+1 < X-XSS-Protection: 1; mode=block
+1 < alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400
+1 < cf-request-id: 0a42b69485000056add33eb000000001
+{"user":{"id":105277,"email":"kar1@test.com","createdAt":"2020-07-11T18:44:04.192Z","updatedAt":"2020-07-11T18:44:04.199Z","username":"Kar1","bio":null,"image":null,"token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTA1Mjc3LCJ1c2VybmFtZSI6IkthcjEiLCJleHAiOjE2MjcwODk3MzV9.GaL526f3LizBHB3NX0BBEUpbHLFmwgwWKdYTQpH_exc"}}
+
+20:22:14.256 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:helpers/CreateToken.feature
+20:22:14.294 [main] DEBUG com.intuit.karate - request:
+1 > POST https://conduit.productionready.io/api/users
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTA1Mjc3LCJ1c2VybmFtZSI6IkthcjEiLCJleHAiOjE2MjcwODk3MzV9.GaL526f3LizBHB3NX0BBEUpbHLFmwgwWKdYTQpH_exc
+1 > Connection: Keep-Alive
+1 > Content-Length: 82
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: conduit.productionready.io
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/11.0.11)
+{"user":{"email":"karateUser10@test.com","password":"1010","username":"tester01"}}
+
+20:22:14.868 [main] DEBUG com.intuit.karate - response time in milliseconds: 572.85
+1 < 422
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 654af39f4cd356a7-LIM
+1 < Cache-Control: no-cache
+1 < Connection: keep-alive
+1 < Content-Length: 104
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Tue, 25 May 2021 01:22:16 GMT
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < NEL: {"report_to":"cf-nel","max_age":604800}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v2?s=KVGSrn5DG4wkx4oLRSXRkYCbI5egUmodcwZuE0Hv9HkLtvgOJcNSB5YvG7tQMnlKUtRWI8G7P1mSR%2FVqLFkpojPnccrYYsWoXa2JdVauiPa9prN62h312nUxYqVZmwWaMPHwJAkrOVU%3D"}],"group":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < Status: 422 Unprocessable Entity
+1 < Vary: Origin
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Powered-By: Phusion Passenger 4.0.60
+1 < X-Request-Id: f093bcf0-d6ab-404b-aca7-a39e8eaf980e
+1 < X-Runtime: 0.105102
+1 < X-XSS-Protection: 1; mode=block
+1 < alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400
+1 < cf-request-id: 0a42b69790000056a7630b9000000001
+{"errors":{"password":["is too short (minimum is 8 characters)"],"username":["has already been taken"]}}
+
+20:22:14.869 [main] ERROR com.intuit.karate - status code was: 422, expected: 200, response time: 573, url: https://conduit.productionready.io/api/users, response: {"errors":{"password":["is too short (minimum is 8 characters)"],"username":["has already been taken"]}}
+20:56:46.762 [main] INFO  com.intuit.karate.RunnerOptions - found system property 'karate.options': --tags @debug
+20:56:51.925 [main] INFO  com.intuit.karate - karate.env system property was:  
+20:56:51.956 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:helpers/CreateToken.feature
+20:56:53.835 [main] DEBUG com.intuit.karate - request:
+1 > POST https://conduit.productionready.io/api/users/login
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 57
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: conduit.productionready.io
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/11.0.11)
+{"user":{"email":"kar1@test.com","password":"Karate123"}}
+
+20:56:55.060 [main] DEBUG com.intuit.karate - response time in milliseconds: 1219.72
+1 < 200
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 654b2667daee36e1-LIM
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Tue, 25 May 2021 01:56:56 GMT
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < NEL: {"report_to":"cf-nel","max_age":604800}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v2?s=fW%2FNQTHgIN8hDZMjz8o4dYSrrmWgH2g4inC%2BPQT8tOhQvr%2BqQyTNUrHX%2BNw2WpRFnGHFUpt0qagstd34AfobowdFjBlZm6h8aqdhP7nWrj6JbsQHCfc7Z%2BUNg%2F3q8iqGRIvg57vGPc4%3D"}],"group":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < Transfer-Encoding: chunked
+1 < alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400
+1 < cache-control: max-age=0, private, must-revalidate
+1 < cf-request-id: 0a42d654e9000036e1fb233000000001
+1 < etag: W/"3be7dbe23776580932ee66e4f4cf21aa"
+1 < status: 200 OK
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-frame-options: SAMEORIGIN
+1 < x-powered-by: Phusion Passenger 4.0.60
+1 < x-request-id: c2553dfd-3bae-4328-b53b-5132edc79a65
+1 < x-runtime: 0.082424
+1 < x-xss-protection: 1; mode=block
+{"user":{"id":105277,"email":"kar1@test.com","createdAt":"2020-07-11T18:44:04.192Z","updatedAt":"2020-07-11T18:44:04.199Z","username":"Kar1","bio":null,"image":null,"token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTA1Mjc3LCJ1c2VybmFtZSI6IkthcjEiLCJleHAiOjE2MjcwOTE4MTZ9.P4Xp4WcONp4DS6dHoCr3LOfc9UsXPVRjtmLUDdMQejs"}}
+
+20:56:55.087 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:helpers/CreateToken.feature
+20:56:55.155 [main] DEBUG com.intuit.karate - request:
+1 > POST https://conduit.productionready.io/api/users
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTA1Mjc3LCJ1c2VybmFtZSI6IkthcjEiLCJleHAiOjE2MjcwOTE4MTZ9.P4Xp4WcONp4DS6dHoCr3LOfc9UsXPVRjtmLUDdMQejs
+1 > Connection: Keep-Alive
+1 > Content-Length: 86
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: conduit.productionready.io
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/11.0.11)
+{"user":{"email":"karateUser10@test.com","password":"12345670","username":"tester02"}}
+
+20:56:55.716 [main] DEBUG com.intuit.karate - response time in milliseconds: 558.62
+1 < 200
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 654b266cfe4a56b8-LIM
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Tue, 25 May 2021 01:56:56 GMT
+1 < ETag: W/"7ea08d6f761053138e5917fe27acfedd"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Location: /
+1 < NEL: {"report_to":"cf-nel","max_age":604800}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v2?s=0y80V4wrjFQssrcKp%2BlXD8rfgmNNgv8umFhfhEPDSuZ1TUocAhQfg92V8fgi6jV%2BeJi9OTU8gI1WZzn8iZNGLEfmo3l%2FQv8i9d70N6HCbLJTyblIOGXh11y4SixFrL4aJ4hU8QjmdFo%3D"}],"group":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < Status: 200 OK
+1 < Transfer-Encoding: chunked
+1 < Vary: Origin
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Powered-By: Phusion Passenger 4.0.60
+1 < X-Request-Id: bfd63f13-e17d-4f47-b69b-969c44bb3665
+1 < X-Runtime: 0.099529
+1 < X-XSS-Protection: 1; mode=block
+1 < alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400
+1 < cf-request-id: 0a42d65816000056b86aa1d000000001
+{"user":{"id":171833,"email":"karateuser10@test.com","createdAt":"2021-05-25T01:56:56.797Z","updatedAt":"2021-05-25T01:56:56.803Z","username":"tester02","bio":null,"image":null,"token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTcxODMzLCJ1c2VybmFtZSI6InRlc3RlcjAyIiwiZXhwIjoxNjI3MDkxODE2fQ.fDAW8NYNrm96u4mm_coDLaeft27v1xiD3rA5rVRXNtg"}}
+
+14:26:45.751 [main] INFO  com.intuit.karate.RunnerOptions - found system property 'karate.options': --tags @debug
+14:26:49.707 [main] INFO  com.intuit.karate - karate.env system property was:  
+14:26:49.753 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:helpers/CreateToken.feature
+14:26:51.786 [main] DEBUG com.intuit.karate - request:
+1 > POST https://conduit.productionready.io/api/users/login
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 57
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: conduit.productionready.io
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/11.0.11)
+{"user":{"email":"kar1@test.com","password":"Karate123"}}
+
+14:26:53.537 [main] DEBUG com.intuit.karate - response time in milliseconds: 1745.50
+1 < 200
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 6551286cfaa856a1-LIM
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Tue, 25 May 2021 19:26:53 GMT
+1 < ETag: W/"e4cce47e250480029eb58e4cc00df285"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < NEL: {"report_to":"cf-nel","max_age":604800}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v2?s=E5uRtGZa3bntVoEhJThnRX7Jatgfz6Y38P660RHRwmm0yqVPky7TMV8eN5QLEKFBYWmzJfmhxmdagSKnblGNyK3ahwMMPHd0jt7phhSILy86fLiG2BL98YuVy0iQ0dOAB%2BlT66PlR%2BU%3D"}],"group":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < Status: 200 OK
+1 < Transfer-Encoding: chunked
+1 < Vary: Origin
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Powered-By: Phusion Passenger 4.0.60
+1 < X-Request-Id: a3ff8c27-7004-4161-907b-5b22197858e5
+1 < X-Runtime: 0.082582
+1 < X-XSS-Protection: 1; mode=block
+1 < alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400
+1 < cf-request-id: 0a4697981d000056a1321a5000000001
+{"user":{"id":105277,"email":"kar1@test.com","createdAt":"2020-07-11T18:44:04.192Z","updatedAt":"2020-07-11T18:44:04.199Z","username":"Kar1","bio":null,"image":null,"token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTA1Mjc3LCJ1c2VybmFtZSI6IkthcjEiLCJleHAiOjE2MjcxNTQ4MTN9.2J93PC_du3iTja4ZL4_X2so9AOZRo8FA7kbACh9qQQg"}}
+
+14:26:53.573 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:helpers/CreateToken.feature
+14:28:18.952 [main] INFO  com.intuit.karate.RunnerOptions - found system property 'karate.options': --tags @debug
+14:28:21.873 [main] INFO  com.intuit.karate - karate.env system property was:  
+14:28:21.897 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:helpers/CreateToken.feature
+14:28:23.161 [main] DEBUG com.intuit.karate - request:
+1 > POST https://conduit.productionready.io/api/users/login
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 57
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: conduit.productionready.io
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/11.0.11)
+{"user":{"email":"kar1@test.com","password":"Karate123"}}
+
+14:28:24.387 [main] DEBUG com.intuit.karate - response time in milliseconds: 1216.40
+1 < 200
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 65512aa4784156a7-LIM
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Tue, 25 May 2021 19:28:24 GMT
+1 < ETag: W/"857d4fc4a5665c1a97eb4eef25854291"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < NEL: {"report_to":"cf-nel","max_age":604800}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v2?s=F94hREBnmgvcZ4FxE4b7fZawTAwrLlbE3jD6OK9XYMsG7jAo5scyZjtYoHRqAscOG5PDGbCMSCbLzAE12QjF81DMzfH273Ex2baNqIycNM5%2FyKh7L3TaiBqdYaeWE0e1HDLfCjH5Z9s%3D"}],"group":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < Status: 200 OK
+1 < Transfer-Encoding: chunked
+1 < Vary: Origin
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Powered-By: Phusion Passenger 4.0.60
+1 < X-Request-Id: 39164ec1-5d8e-448e-bd6e-404a5c188e1f
+1 < X-Runtime: 0.083440
+1 < X-XSS-Protection: 1; mode=block
+1 < alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400
+1 < cf-request-id: 0a4698faca000056a7908a8000000001
+{"user":{"id":105277,"email":"kar1@test.com","createdAt":"2020-07-11T18:44:04.192Z","updatedAt":"2020-07-11T18:44:04.199Z","username":"Kar1","bio":null,"image":null,"token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTA1Mjc3LCJ1c2VybmFtZSI6IkthcjEiLCJleHAiOjE2MjcxNTQ5MDR9.b8jJ_xOlihMCzB11xA3R31tsz7sfi5Uen9i8ZGZzBEU"}}
+
+14:28:24.409 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:helpers/CreateToken.feature
+14:30:39.513 [main] INFO  com.intuit.karate.RunnerOptions - found system property 'karate.options': --tags @debug
+14:30:42.745 [main] INFO  com.intuit.karate - karate.env system property was:  
+14:30:42.777 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:helpers/CreateToken.feature
+14:30:44.262 [main] DEBUG com.intuit.karate - request:
+1 > POST https://conduit.productionready.io/api/users/login
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 57
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: conduit.productionready.io
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/11.0.11)
+{"user":{"email":"kar1@test.com","password":"Karate123"}}
+
+14:30:45.363 [main] DEBUG com.intuit.karate - response time in milliseconds: 1097.13
+1 < 200
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 65512e15ca8056a1-LIM
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Tue, 25 May 2021 19:30:45 GMT
+1 < ETag: W/"9303b60b1c0d1604472ed254932a0f36"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < NEL: {"report_to":"cf-nel","max_age":604800}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v2?s=YIt%2Fx%2BnxofSI5un5GSKoJAyKm61VGlyYGC7YeoL3F9qB2O9llx2tivUot91gvG%2BMtDXJB%2FFjZykTy9iPk8assdZur4WWx5hjnAC%2FenEf0pVDVg9CzQa4IDQq4yqwQdd7gd9k%2B4RukGE%3D"}],"group":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < Status: 200 OK
+1 < Transfer-Encoding: chunked
+1 < Vary: Origin
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Powered-By: Phusion Passenger 4.0.60
+1 < X-Request-Id: a91bf87d-1a11-4c8a-8ee3-6cf9a675e32a
+1 < X-Runtime: 0.082169
+1 < X-XSS-Protection: 1; mode=block
+1 < alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400
+1 < cf-request-id: 0a469b219b000056a13584d000000001
+{"user":{"id":105277,"email":"kar1@test.com","createdAt":"2020-07-11T18:44:04.192Z","updatedAt":"2020-07-11T18:44:04.199Z","username":"Kar1","bio":null,"image":null,"token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTA1Mjc3LCJ1c2VybmFtZSI6IkthcjEiLCJleHAiOjE2MjcxNTUwNDV9.Ymeh6IBVwhM7LSxtJQ4LR9NafU5CKbMONEdYxkvEzgc"}}
+
+14:30:45.385 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:helpers/CreateToken.feature
+14:30:45.452 [main] DEBUG com.intuit.karate - request:
+1 > POST https://conduit.productionready.io/api/users
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTA1Mjc3LCJ1c2VybmFtZSI6IkthcjEiLCJleHAiOjE2MjcxNTUwNDV9.Ymeh6IBVwhM7LSxtJQ4LR9NafU5CKbMONEdYxkvEzgc
+1 > Connection: Keep-Alive
+1 > Content-Length: 88
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: conduit.productionready.io
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/11.0.11)
+{"user":{"email":"karateUser2505@test.com","password":"12345670","username":"tester03"}}
+
+14:30:46.174 [main] DEBUG com.intuit.karate - response time in milliseconds: 720.16
+1 < 200
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 65512e1b0b0856a7-LIM
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Tue, 25 May 2021 19:30:46 GMT
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < NEL: {"report_to":"cf-nel","max_age":604800}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v2?s=iBUufC9YC6DeGMakpHX%2B81us2fgPf5N79FUpeFs9ZDtbTDJj87VWBa7Uu9ctVoe02NllacjMZBwkSUOJphp01NTpnAWw2V566tIZdViBfvi4bw4AhBaOy9fHJnIJOkBvVH2np2dzheU%3D"}],"group":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < Transfer-Encoding: chunked
+1 < alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400
+1 < cache-control: max-age=0, private, must-revalidate
+1 < cf-request-id: 0a469b24e6000056a71c88a000000001
+1 < etag: W/"6073a6769dffbd42594d69f34318a568"
+1 < location: /
+1 < status: 200 OK
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-frame-options: SAMEORIGIN
+1 < x-powered-by: Phusion Passenger 4.0.60
+1 < x-request-id: aa2b4832-d296-4b23-93da-c9978d0964dd
+1 < x-runtime: 0.124767
+1 < x-xss-protection: 1; mode=block
+{"user":{"id":171998,"email":"karateuser2505@test.com","createdAt":"2021-05-25T19:30:46.038Z","updatedAt":"2021-05-25T19:30:46.047Z","username":"tester03","bio":null,"image":null,"token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTcxOTk4LCJ1c2VybmFtZSI6InRlc3RlcjAzIiwiZXhwIjoxNjI3MTU1MDQ2fQ.SwTu5b9dShYdLCP1LuxYSkMzJDZQYqRRT4MWyzvZtdE"}}
+
+15:50:38.487 [main] INFO  com.intuit.karate.RunnerOptions - found system property 'karate.options': --tags @debug
+15:50:41.706 [main] INFO  com.intuit.karate - karate.env system property was:  
+15:50:41.718 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:helpers/CreateToken.feature
+15:50:43.621 [main] DEBUG com.intuit.karate - request:
+1 > POST https://conduit.productionready.io/api/users/login
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 57
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: conduit.productionready.io
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/11.0.11)
+{"user":{"email":"kar1@test.com","password":"Karate123"}}
+
+15:50:45.134 [main] DEBUG com.intuit.karate - response time in milliseconds: 1508.76
+1 < 200
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 6551a345b85956b3-LIM
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Tue, 25 May 2021 20:50:45 GMT
+1 < ETag: W/"c9d18d8c06e9e33b8416f5b3d28dcd5f"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < NEL: {"report_to":"cf-nel","max_age":604800}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v2?s=07WvFr85C98zvyi4MZjO0hvWbdSnb7puWgG5ZsvEaohFVH8b73p%2BIEHNQZ4Ckf6NNmu0IrqGhwSOu0avv1iSE9XwJZNuf12dFJUPzbnFiZd9vCglkBBKfGbxbVN4C3ILLJuugZ2hzu8%3D"}],"group":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < Status: 200 OK
+1 < Transfer-Encoding: chunked
+1 < Vary: Origin
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Powered-By: Phusion Passenger 4.0.60
+1 < X-Request-Id: 86f1a7b8-697d-4e78-9785-aae4399752f9
+1 < X-Runtime: 0.082450
+1 < X-XSS-Protection: 1; mode=block
+1 < alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400
+1 < cf-request-id: 0a46e45f96000056b36100c000000001
+{"user":{"id":105277,"email":"kar1@test.com","createdAt":"2020-07-11T18:44:04.192Z","updatedAt":"2020-07-11T18:44:04.199Z","username":"Kar1","bio":null,"image":null,"token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTA1Mjc3LCJ1c2VybmFtZSI6IkthcjEiLCJleHAiOjE2MjcxNTk4NDV9.esKnQKep6yA_qsNIzPaGqTFXAJRl_F5I-jqsNbCEwnI"}}
+
+15:50:45.214 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:helpers/CreateToken.feature
+15:50:45.336 [main] DEBUG com.intuit.karate - request:
+1 > POST https://conduit.productionready.io/api/users
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTA1Mjc3LCJ1c2VybmFtZSI6IkthcjEiLCJleHAiOjE2MjcxNTk4NDV9.esKnQKep6yA_qsNIzPaGqTFXAJRl_F5I-jqsNbCEwnI
+1 > Connection: Keep-Alive
+1 > Content-Length: 88
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: conduit.productionready.io
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/11.0.11)
+{"user":{"email":"karateUser2505@test.com","password":"12345670","username":"tester03"}}
+
+15:50:45.906 [main] DEBUG com.intuit.karate - response time in milliseconds: 567.69
+1 < 422
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 6551a34b2b8936e5-LIM
+1 < Cache-Control: no-cache
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Tue, 25 May 2021 20:50:46 GMT
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < NEL: {"report_to":"cf-nel","max_age":604800}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v2?s=ZIN%2BxSbOYMCvygmPeA5oyaC2kreAoxi%2BqLbPDxH1PoKl03NQr3k%2FGQz3ZHb6wHMMx6KzWfsuBkIeCe7jNSErt1ZfGhC9SfXTg%2FOyZ16X7lCYnUgowlvsxVUnByDxnrUnV5tRHUR4lMI%3D"}],"group":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < Status: 422 Unprocessable Entity
+1 < Transfer-Encoding: chunked
+1 < Vary: Origin
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Powered-By: Phusion Passenger 4.0.60
+1 < X-Request-Id: 08f14af0-66fb-4974-83ce-e523359127e4
+1 < X-Runtime: 0.087079
+1 < X-XSS-Protection: 1; mode=block
+1 < alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400
+1 < cf-request-id: 0a46e462f8000036e50a3a4000000001
+{"errors":{"email":["has already been taken"],"username":["has already been taken"]}}
+
+15:50:45.907 [main] ERROR com.intuit.karate - status code was: 422, expected: 200, response time: 568, url: https://conduit.productionready.io/api/users, response: {"errors":{"email":["has already been taken"],"username":["has already been taken"]}}
