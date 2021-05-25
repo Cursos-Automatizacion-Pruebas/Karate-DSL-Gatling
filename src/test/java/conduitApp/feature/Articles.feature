@@ -1,5 +1,4 @@
 Feature: Articles
-
     Background: Define URL
         Given url apiUrl
         * def tokenResponse=callonce read('classpath:helpers/CreateToken.feature') 
