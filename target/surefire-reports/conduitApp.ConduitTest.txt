@@ -1,7 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: conduitApp.ConduitTest
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 13.143 s <<< FAILURE! - in conduitApp.ConduitTest
-testAll[2][2]  Time elapsed: 2.873 s  <<< FAILURE!
-org.opentest4j.AssertionFailedError: HomePage.feature:26 - path: $.articles[0].createdAt, actual: '2021-05-26T03:21:20.732Z', expected: '2020', reason: not a sub-string
-
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 15.367 s - in conduitApp.ConduitTest
