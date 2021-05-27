@@ -1,6 +1,6 @@
-16:41:07.116 karate.env system property was:  
-16:41:07.153 >> lock acquired, begin callSingle: classpath:helpers/CreateToken.feature
-16:41:08.709 request:
+17:09:40.174 karate.env system property was:  
+17:09:40.186 >> lock acquired, begin callSingle: classpath:helpers/CreateToken.feature
+17:09:42.463 request:
 1 > POST https://conduit.productionready.io/api/users/login
 1 > Accept-Encoding: gzip,deflate
 1 > Connection: Keep-Alive
@@ -10,18 +10,18 @@
 1 > User-Agent: Apache-HttpClient/4.5.11 (Java/11.0.11)
 {"user":{"email":"kar1@test.com","password":"Karate123"}}
 
-16:41:10.668 response time in milliseconds: 1953.43
+17:09:45.475 response time in milliseconds: 3004.65
 1 < 200
 1 < CF-Cache-Status: DYNAMIC
-1 < CF-RAY: 655a2a82bb0156b3-LIM
+1 < CF-RAY: 656291c8da90a11a-LIM
 1 < Cache-Control: max-age=0, private, must-revalidate
 1 < Connection: keep-alive
 1 < Content-Type: application/json; charset=utf-8
-1 < Date: Wed, 26 May 2021 21:41:10 GMT
-1 < ETag: W/"ec3ab306d6df9b84a5d868033094a024"
+1 < Date: Thu, 27 May 2021 22:09:46 GMT
+1 < ETag: W/"de733770b392fd936a49ac9df32aa779"
 1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
 1 < NEL: {"report_to":"cf-nel","max_age":604800}
-1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v2?s=n80HmGXId%2BRvVFfWglRz0wjAIR9T18eN%2FvR7RXPdrXJIQHFJml5v9v3wjPWWmq%2BBmraHfYYAAmOA9agMwfkMPN0tcZSfz%2Beco1YtbWWpARA0da07Mzlho66TIvCwgn4w7RhouN2Pt%2Bo%3D"}],"group":"cf-nel","max_age":604800}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v2?s=Yi7cGUmGhIu2EmoKt9yYzdRmmDpEIiVTXeMQF4HsKhMkdnR1VqDQZJAKTdp9OXAj5mFpQjCiq1hXjJ73m3nubAjO3LMGxN1Cz1xXpSX5jLhMhJ5JQwypR95ZVn%2Ff9YHTbWLumthCs8w%3D"}],"group":"cf-nel","max_age":604800}
 1 < Server: cloudflare
 1 < Status: 200 OK
 1 < Transfer-Encoding: chunked
@@ -29,34 +29,38 @@
 1 < X-Content-Type-Options: nosniff
 1 < X-Frame-Options: SAMEORIGIN
 1 < X-Powered-By: Phusion Passenger 4.0.60
-1 < X-Request-Id: ba909cbc-66e4-43b9-b20d-28b202b607ed
-1 < X-Runtime: 0.089931
+1 < X-Request-Id: 69e1cf52-1564-47c2-beed-eafa9272a6bb
+1 < X-Runtime: 0.084236
 1 < X-XSS-Protection: 1; mode=block
 1 < alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400
-1 < cf-request-id: 0a4c38e5b5000056b359888000000001
-{"user":{"id":105277,"email":"kar1@test.com","createdAt":"2020-07-11T18:44:04.192Z","updatedAt":"2020-07-11T18:44:04.199Z","username":"Kar1","bio":null,"image":null,"token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTA1Mjc3LCJ1c2VybmFtZSI6IkthcjEiLCJleHAiOjE2MjcyNDkyNzB9.O9O9X4YM4I-EFBp6N4XzGQnqGxeAmyY-weIwvocoCQE"}}
+1 < cf-request-id: 0a5179718a0000a11a4a199000000001
+{"user":{"id":105277,"email":"kar1@test.com","createdAt":"2020-07-11T18:44:04.192Z","updatedAt":"2020-07-11T18:44:04.199Z","username":"Kar1","bio":null,"image":null,"token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTA1Mjc3LCJ1c2VybmFtZSI6IkthcjEiLCJleHAiOjE2MjczMzczODZ9.PaIPn3lKYZf8FCyl7WuF4cVlLFWiTwwaKdDA2SwzSoE"}}
 
-16:41:10.718 << lock released, cached callSingle: classpath:helpers/CreateToken.feature
-16:41:10.772 request:
-1 > GET https://conduit.productionready.io/api/tags
+17:09:45.545 << lock released, cached callSingle: classpath:helpers/CreateToken.feature
+17:09:46.290 request:
+1 > POST https://conduit.productionready.io/api/users
 1 > Accept-Encoding: gzip,deflate
-1 > Authorization: Token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTA1Mjc3LCJ1c2VybmFtZSI6IkthcjEiLCJleHAiOjE2MjcyNDkyNzB9.O9O9X4YM4I-EFBp6N4XzGQnqGxeAmyY-weIwvocoCQE
+1 > Authorization: Token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTA1Mjc3LCJ1c2VybmFtZSI6IkthcjEiLCJleHAiOjE2MjczMzczODZ9.PaIPn3lKYZf8FCyl7WuF4cVlLFWiTwwaKdDA2SwzSoE
 1 > Connection: Keep-Alive
+1 > Content-Length: 85
+1 > Content-Type: application/json; charset=UTF-8
 1 > Host: conduit.productionready.io
 1 > User-Agent: Apache-HttpClient/4.5.11 (Java/11.0.11)
+{"user":{"email":"tyron38@test.com","password":"12250502","username":"shonta.boyer"}}
 
-16:41:15.291 response time in milliseconds: 4507.59
+17:09:46.958 response time in milliseconds: 663.27
 1 < 200
 1 < CF-Cache-Status: DYNAMIC
-1 < CF-RAY: 655a2a88186ca644-LIM
+1 < CF-RAY: 656291d339bcb02e-LIM
 1 < Cache-Control: max-age=0, private, must-revalidate
 1 < Connection: keep-alive
 1 < Content-Type: application/json; charset=utf-8
-1 < Date: Wed, 26 May 2021 21:41:15 GMT
-1 < ETag: W/"822376423971c4fca2d41e8e29ac14de"
+1 < Date: Thu, 27 May 2021 22:09:48 GMT
+1 < ETag: W/"862ea55b0059b26e4aee7bbf98322448"
 1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Location: /
 1 < NEL: {"report_to":"cf-nel","max_age":604800}
-1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v2?s=SfHyv%2FDFQTDC0J616ts7zP7BwlB09vUJtqi208qtoOJd%2FqdpgLdQch%2BM0KDoTPKidwG0NwHNU7j0XTFDn23SwZMQaClSp6WbOXOsi3bC%2BzUAJDkUbN2UQ1Yi09wWieremeUaQzeVqzE%3D"}],"group":"cf-nel","max_age":604800}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v2?s=f7NBRYaBCxTRkAWXJeXCqZi4BDzE0c%2B7FdpKG9f43ai2FwZ5rvoR9McKTNR47jp4lkAanHKTrhNrox5nitFcebaPeF24p28f7H%2FwU0CYvo1JybYYXkXfzswTibRS7NtAjNbGRm5mmzc%3D"}],"group":"cf-nel","max_age":604800}
 1 < Server: cloudflare
 1 < Status: 200 OK
 1 < Transfer-Encoding: chunked
@@ -64,18 +68,19 @@
 1 < X-Content-Type-Options: nosniff
 1 < X-Frame-Options: SAMEORIGIN
 1 < X-Powered-By: Phusion Passenger 4.0.60
-1 < X-Request-Id: f571292c-9867-49a3-b07c-806c6970f08b
-1 < X-Runtime: 3.580149
+1 < X-Request-Id: d7e8b2cd-076f-49f5-b8a9-e67fa301df57
+1 < X-Runtime: 0.115833
 1 < X-XSS-Protection: 1; mode=block
 1 < alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400
-1 < cf-request-id: 0a4c38e9110000a6443285b000000001
-{"tags":["‌","‌‌","‌‌‌","‌‌‌‌","‌‌‌‌‌‌‌","‌‌‌‌‌","‌‌‌‌‌‌‌‌","‌‌‌‌‌‌","‌‌‌‌‌‌‌‌‌‌","‌‌‌‌‌‌‌‌‌‌‌","HuManIty","Hu‌Man‌Ity","Gandhi","HITLER","SIDA","BlackLivesMatter","Black‌Lives‌Matter","test","dragons","butt"]}
+1 < cf-request-id: 0a517978010000b02eee0f6000000001
+{"user":{"id":172653,"email":"tyron38@test.com","createdAt":"2021-05-27T22:09:48.403Z","updatedAt":"2021-05-27T22:09:48.419Z","username":"shonta.boyer","bio":null,"image":null,"token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTcyNjUzLCJ1c2VybmFtZSI6InNob250YS5ib3llciIsImV4cCI6MTYyNzMzNzM4OH0.iBPyzfPmJrciSD4q-shsTbqgQU718t9aI7lZgeSjqUc"}}
 
-16:41:15.355 karate.env system property was:  
-16:41:15.408 request:
-1 > GET https://conduit.productionready.io/api/articles?limit=10&offset=0
-1 > Accept-Encoding: gzip,deflate
-1 > Authorization: Token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTA1Mjc3LCJ1c2VybmFtZSI6IkthcjEiLCJleHAiOjE2MjcyNDkyNzB9.O9O9X4YM4I-EFBp6N4XzGQnqGxeAmyY-weIwvocoCQE
+PM6KU7lw6pL0"}}
+
+o"}}
+
+
+n eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTA1Mjc3LCJ1c2VybmFtZSI6IkthcjEiLCJleHAiOjE2MjcyNDkyNzB9.O9O9X4YM4I-EFBp6N4XzGQnqGxeAmyY-weIwvocoCQE
 1 > Connection: Keep-Alive
 1 > Host: conduit.productionready.io
 1 > User-Agent: Apache-HttpClient/4.5.11 (Java/11.0.11)
