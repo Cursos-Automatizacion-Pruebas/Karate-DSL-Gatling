@@ -1,6 +1,6 @@
-02:05:56.359 karate.env system property was:  
-02:05:56.383 >> lock acquired, begin callSingle: classpath:helpers/CreateToken.feature
-02:05:57.624 request:
+16:36:36.803 karate.env system property was:  
+16:36:36.830 >> lock acquired, begin callSingle: classpath:helpers/CreateToken.feature
+16:36:38.641 request:
 1 > POST https://conduit.productionready.io/api/users/login
 1 > Accept-Encoding: gzip,deflate
 1 > Connection: Keep-Alive
@@ -10,51 +10,50 @@
 1 > User-Agent: Apache-HttpClient/4.5.11 (Java/11.0.11)
 {"user":{"email":"kar1@test.com","password":"Karate123"}}
 
-02:05:58.894 response time in milliseconds: 1263.52
+16:36:39.954 response time in milliseconds: 1308.14
 1 < 200
 1 < CF-Cache-Status: DYNAMIC
-1 < CF-RAY: 6565a3440ffc56b3-LIM
-1 < Cache-Control: max-age=0, private, must-revalidate
+1 < CF-RAY: 65ddf9e958c5baea-SCL
 1 < Connection: keep-alive
 1 < Content-Type: application/json; charset=utf-8
-1 < Date: Fri, 28 May 2021 07:06:00 GMT
-1 < ETag: W/"daf436a021887a0a159875d8a841e416"
+1 < Date: Fri, 11 Jun 2021 21:36:40 GMT
 1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
 1 < NEL: {"report_to":"cf-nel","max_age":604800}
-1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v2?s=4soQ5UW0TeA4cj2nA7yCaIvJdMaHgVQ4M2%2F%2FAZz%2FBoVXnLIUZscATjTK2XeIyIago%2B5wlwioFwkkj9flXlwvpYLRuLHOd7ulYjLhZyRQlaswDJb3YYj4TrKOUQngVrXVJDtFAiNQMUE%3D"}],"group":"cf-nel","max_age":604800}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v2?s=O0ZM7lW0iZ2NLPD51CVvuZ3FOGnbl1EUkaiYldnv0cQh8xwW0EVQwekXY6PPbVPAFMpSyXE7QvTXC3P%2FDT%2BJvLxN9kHCdG0v4KzQ6L%2BJvhlHrOgSYqM%2B%2FOcWeOTidIDudZJ08gqlA3Q%3D"}],"group":"cf-nel","max_age":604800}
 1 < Server: cloudflare
-1 < Status: 200 OK
 1 < Transfer-Encoding: chunked
-1 < Vary: Origin
-1 < X-Content-Type-Options: nosniff
-1 < X-Frame-Options: SAMEORIGIN
-1 < X-Powered-By: Phusion Passenger 4.0.60
-1 < X-Request-Id: 00207e98-8a90-4065-9c67-fcad6ef43956
-1 < X-Runtime: 0.107532
-1 < X-XSS-Protection: 1; mode=block
-1 < alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400
-1 < cf-request-id: 0a53645e86000056b34db5a000000001
-{"user":{"id":105277,"email":"kar1@test.com","createdAt":"2020-07-11T18:44:04.192Z","updatedAt":"2020-07-11T18:44:04.199Z","username":"Kar1","bio":null,"image":null,"token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTA1Mjc3LCJ1c2VybmFtZSI6IkthcjEiLCJleHAiOjE2MjczNjk1NjB9.emft1_7ZfrXTq8sBiSR_Cdz0FZjP27s3pHbJPZQhV_M"}}
+1 < alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400, h3=":443"; ma=86400
+1 < cache-control: max-age=0, private, must-revalidate
+1 < cf-request-id: 0a9e9a85d50000baea0c909000000001
+1 < etag: W/"a722aaae481c32397aac41ffe51cc526"
+1 < status: 200 OK
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-frame-options: SAMEORIGIN
+1 < x-powered-by: Phusion Passenger 4.0.60
+1 < x-request-id: c20d834e-fdca-4fd3-a02e-ad5761f276eb
+1 < x-runtime: 0.093834
+1 < x-xss-protection: 1; mode=block
+{"user":{"id":105277,"email":"kar1@test.com","createdAt":"2020-07-11T18:44:04.192Z","updatedAt":"2020-07-11T18:44:04.199Z","username":"Kar1","bio":null,"image":null,"token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTA1Mjc3LCJ1c2VybmFtZSI6IkthcjEiLCJleHAiOjE2Mjg2MzE0MDB9.zVoE-nzzGAVZa9AI9PE-lcQjPy4xD9UvxbILa08jLKI"}}
 
-02:05:58.923 << lock released, cached callSingle: classpath:helpers/CreateToken.feature
-02:05:59.421 request:
-1 > POST https://conduit.productionready.io/api/articles
-1 > Accept-Encoding: gzip,deflate
-1 > Authorization: Token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTA1Mjc3LCJ1c2VybmFtZSI6IkthcjEiLCJleHAiOjE2MjczNjk1NjB9.emft1_7ZfrXTq8sBiSR_Cdz0FZjP27s3pHbJPZQhV_M
-1 > Connection: Keep-Alive
-1 > Content-Length: 113
-1 > Content-Type: application/json; charset=UTF-8
-1 > Host: conduit.productionready.io
-1 > User-Agent: Apache-HttpClient/4.5.11 (Java/11.0.11)
-{"article":{"tagList":[],"title":"Harwyn Plumm","description":"Volantis","body":"Fear cuts deeper than swords."}}
-
-02:05:59.957 response time in milliseconds: 530.17
-1 < 200
-1 < CF-Cache-Status: DYNAMIC
-1 < CF-RAY: 6565a34bdfc656b9-LIM
-1 < Cache-Control: max-age=0, private, must-revalidate
-1 < Connection: keep-alive
-1 < Content-Type: application/json; charset=utf-8
+16:36:39.979 << lock released, cached callSingle: classpath:helpers/CreateToken.feature
+16:36:40.050 [print]
+16:36:40.057 [print] This is first scenario
+16:36:40.421 [print] lorinda.hills
+16:36:40.436 karate.env system property was:  
+16:36:40.446 [print]
+16:36:40.466 [print] This is second scenario
+16:36:40.551 [print] marcie.padberg
+16:36:40.562 After Feature 
+io hook failed: javascript function call failed: TypeError: karate.callonce is not a function
+16:35:13.752 karate.env system property was:  
+16:35:13.763 [print]
+16:35:13.771 [print] This is second scenario
+16:35:13.772 javascript function call failed: TypeError: karate.callonce is not a function
+16:35:13.773 failed function body: function() {karate.callonce('classpath:helpers/Dummy.feature')}
+16:35:13.774 afterScenario hook failed: javascript function call failed: TypeError: karate.callonce is not a function
+16:35:13.783 After Feature 
+-8
 1 < Date: Fri, 28 May 2021 07:06:01 GMT
 1 < ETag: W/"1ffa44b1d50a12e2945a17c2151d49bf"
 1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
