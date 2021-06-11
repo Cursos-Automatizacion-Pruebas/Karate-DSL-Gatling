@@ -3,9 +3,9 @@ El Nombre completo del curso es Karate DSL: API Automation and Performance from 
 
 ## Notas
 - Session 26
-- Hooks.feature
-
-- afterFeature
-    Se imprime en terminal al final de cada Feature
-- afterScenario
-    Se imprime en terminal al final de cada escenario
+   
+    - Hooks.feature
+        - afterFeature  
+            Se imprime en terminal al final de cada Feature
+        - afterScenario  
+            Se imprime en terminal al final de cada escenario
